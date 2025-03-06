@@ -1,0 +1,33 @@
+{
+    "tag": "div",
+    "class" : ["app"],
+    "children": [
+        {
+            "tag": "h1",
+            "props": {
+                "title": "String"
+            },
+            "class": ["app__title"],
+        },
+        {
+            "tag": "h2",
+            "states":{
+                "count": 0
+            }
+        },
+        {
+            "tag": "h3",
+            "computed": {
+                "doubleCount": "count.value * 2"
+            }
+        },
+        {
+            "tag": "button",
+            "events": {
+                "click": {
+                    "handleClick": "count.value * 2 "
+                }
+            }
+        }
+    ]
+}
